@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>SaberVirtual - Centro de Explicações</title>
+    <meta name="description" content="Centro de explicações com mais de 10 anos de tradição em Santa Maria da Feira. Preparamos o teu futuro com técnicas de estudo e trabalho.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sabervirtual.pt/">
+    <meta property="og:title" content="SaberVirtual - Centro de Explicações">
+    <meta property="og:description" content="Centro de explicações com mais de 10 anos de tradição. Preparamos o teu futuro com técnicas de estudo e trabalho.">
+    <meta property="og:image" content="https://sabervirtual.pt/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SaberVirtual - Centro de Explicações">
+    <meta name="twitter:description" content="Centro de explicações com mais de 10 anos de tradição. Preparamos o teu futuro com técnicas de estudo e trabalho.">
+    <meta name="twitter:image" content="https://sabervirtual.pt/images/og-image.png">
+    
+    <link rel="icon" type="image/png" href="images/logo-vertical.png">
+    <link rel="apple-touch-icon" href="images/logo-vertical.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "SaberVirtual",
+        "description": "Centro de explicações com mais de 10 anos de tradição em Santa Maria da Feira",
+        "url": "https://sabervirtual.pt",
+        "logo": "https://sabervirtual.pt/images/logo-vertical.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. Ferreira Castro, 19",
+            "addressLocality": "Santa Maria da Feira",
+            "postalCode": "4520-261",
+            "addressCountry": "PT"
+        },
+        "telephone": "+351256374367",
+        "email": "geral@sabervirtual.pt",
+        "sameAs": [
+            "https://facebook.com/sabervirtual",
+            "https://instagram.com/sabervirtual"
+        ],
+        "areaServed": "Santa Maria da Feira",
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo-horizontal.png" alt="SaberVirtual">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Oferta</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Sobre nós</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="contact-links">
+                    <a href="tel:+351937614279" aria-label="Telefone" class="contact-link phone-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/351937614279" target="_blank" rel="noopener" aria-label="WhatsApp" class="contact-link whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="language-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <span class="current-lang">PT</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li><a href="#" data-lang="pt">Português</a></li>
+                        <li><a href="#" data-lang="en">English</a></li>
+                        <li><a href="#" data-lang="es">Español</a></li>
+                        <li><a href="#" data-lang="fr">Français</a></li>
+                        <li><a href="#" data-lang="de">Deutsch</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+    <!-- Hero Section with Slider -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+            <div class="hero-shape hero-shape-4"></div>
+        </div>
+        
+        <!-- Hero Slider -->
+        <div class="hero-slider">
+            <!-- Slide 1: Preparamos o teu futuro -->
+            <div class="hero-slide active" data-slide="1">
+                <div class="container hero-content">
+                    <div class="hero-slide-inner">
+                        <div class="hero-text">
+                            <h1>
+                                <span data-i18n="hero.title1">Preparamos o</span> 
+                                <span class="highlight" data-i18n="hero.title2">teu futuro</span>!
+                                <br>
+                                <span data-i18n="hero.title3">Dotando-te de técnicas de</span>
+                                <br>
+                                <span class="highlight" data-i18n="hero.title4">estudo e trabalho.</span>
+                            </h1>
+                            <p data-i18n="hero.subtitle">Trabalhamos continuamente para te dar as ferramentas necessárias para o mundo académico e profissional.</p>
+                        </div>
+                        <div class="hero-image">
+                            <div class="hero-illustration">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="hero-deco hero-deco-rocket">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="hero-deco hero-deco-creativity">
+                                <span>CREATIVITY</span>
+                            </div>
+                            <div class="hero-deco hero-deco-arts">
+                                <span>ARTS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Ofertas -->
+            <div class="hero-slide" data-slide="2">
+                <div class="container hero-content">
+                    <div class="hero-slide-inner hero-slide-ofertas">
+                        <div class="hero-image hero-image-left">
+                            <div class="hero-illustration hero-illustration-backpack">
+                                <i class="fas fa-backpack"></i>
+                                <i class="fas fa-book"></i>
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-ruler"></i>
+                            </div>
+                        </div>
+                        <div class="hero-text hero-text-right">
+                            <div class="hero-blob hero-blob-yellow"></div>
+                            <h2>
+                                <span data-i18n="hero.slide2.title1">Mais que um espaço de estudo</span>
+                                <br>
+                                <span class="highlight-pink" data-i18n="hero.slide2.title2">Ofertas</span>
+                            </h2>
+                            <ul class="hero-ofertas-list">
+                                <li>
+                                    <i class="far fa-smile"></i>
+                                    <span data-i18n="hero.slide2.offer1">Explicações individuais e em grupo (1º ciclo até Ensino Superior)</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-smile"></i>
+                                    <span data-i18n="hero.slide2.offer2">Sala de estudo</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-smile"></i>
+                                    <span data-i18n="hero.slide2.offer3">Psicologia</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-smile"></i>
+                                    <span data-i18n="hero.slide2.offer4">Transporte contratualizado</span>
+                                </li>
+                            </ul>
+                            <div class="hero-blob hero-blob-pink"></div>
+                            <div class="hero-blob hero-blob-purple"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Experiência -->
+            <div class="hero-slide" data-slide="3">
+                <div class="container hero-content">
+                    <div class="hero-slide-inner">
+                        <div class="hero-text hero-text-center">
+                            <h1>
+                                <span class="highlight" data-i18n="hero.slide3.title1">+14 anos</span>
+                                <br>
+                                <span data-i18n="hero.slide3.title2">de experiência</span>
+                            </h1>
+                            <p data-i18n="hero.slide3.subtitle">Uma referência no apoio escolar em Santa Maria da Feira, com milhares de alunos que alcançaram o sucesso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Localização -->
+            <div class="hero-slide" data-slide="4">
+                <div class="container hero-content">
+                    <div class="hero-slide-inner">
+                        <div class="hero-text hero-text-center">
+                            <h1>
+                                <span data-i18n="hero.slide4.title1">No coração de</span>
+                                <br>
+                                <span class="highlight" data-i18n="hero.slide4.title2">Santa Maria da Feira</span>
+                            </h1>
+                            <p data-i18n="hero.slide4.subtitle">Junto à Escola Secundária e nas proximidades das principais áreas escolares.</p>
+                            <a href="#contact" class="btn btn-primary" data-i18n="hero.slide4.cta">Ver localização</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Dots -->
+        <div class="hero-dots">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+
+        <!-- Hero Features (always visible) -->
+        <div class="container hero-features-wrapper">
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span data-i18n="hero.feature1">+10 anos de experiência</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span data-i18n="hero.feature2">Professores qualificados</span>
+                </div>
+                <div class="hero-feature">
+                    <div class="hero-feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <span data-i18n="hero.feature3">Aulas online e presenciais</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="services.title">Oferta</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-carousel">
+                <div class="service-card" data-modal="cycle1">
+                    <div class="service-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 data-i18n="services.cycle1.title">Primeiro ciclo (1º - 4º ano)</h3>
+                    <p data-i18n="services.cycle1.desc">Para os mais pequenos, a iniciar o percurso escolar, é importante criar as bases e hábitos de estudo.</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+                <div class="service-card" data-modal="cycle2">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 data-i18n="services.cycle2.title">Segundo ciclo (5º e 6º anos)</h3>
+                    <p data-i18n="services.cycle2.desc">Nova fase, novos desafios: a dificuldade acresce e manter o ritmo é essencial.</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+                <div class="service-card" data-modal="cycle3">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 data-i18n="services.cycle3.title">Terceiro Ciclo (7º ao 9º ano)</h3>
+                    <p data-i18n="services.cycle3.desc">Um dos ciclos mais exigentes: primeiro exames, primeiras escolhas e desenvolvimento da personalidade. Vamos dar resposta!</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+                <div class="service-card" data-modal="secondary">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 data-i18n="services.secondary.title">Ensino Secundário (10º ao 12º ano)</h3>
+                    <p data-i18n="services.secondary.desc">Mais decisões e mais exigência. O futuro começa a ganhar forma.</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+                <div class="service-card" data-modal="higher">
+                    <div class="service-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 data-i18n="services.higher.title">Ensino Superior</h3>
+                    <p data-i18n="services.higher.desc">Um mundo diferente; com desafios diferentes. Mas nós adoramos um bom desafio.</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+                <div class="service-card" data-modal="psychology">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-i18n="services.psychology.title">Gabinete Psicologia</h3>
+                    <p data-i18n="services.psychology.desc">Mente sã, corpo são! Apoio psicológico para o bem-estar e sucesso académico.</p>
+                    <button class="btn-link" data-i18n="services.learnMore">Saber mais</button>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="why-us-bg"></div>
+        <div class="container">
+            <div class="why-us-content">
+                <div class="why-us-text">
+                    <h2 data-i18n="whyUs.title">Porque é o nosso centro a escolha certa para si?</h2>
+                    <p data-i18n="whyUs.subtitle">Com mais de 10 anos de história, a SaberVirtual sempre foi uma referência para os nossos alunos.</p>
+                    <ul class="why-us-list">
+                        <li>
+                            <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                            <span data-i18n="whyUs.item1">Profissionais com experiência pedagógica</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-building"></i></span>
+                            <span data-i18n="whyUs.item2">Espaço dinâmico, aberto e bem localizado</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                            <span data-i18n="whyUs.item3">Atividades extra curriculares</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-us-image">
+                    <div class="why-us-illustration">
+                        <i class="fas fa-users"></i>
+                        <i class="fas fa-book-reader"></i>
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about.title">Sobre nós</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <p data-i18n="about.p1">O SaberVirtual é um centro de explicações com mais de 10 anos de tradição em Santa Maria da Feira. Esta empresa atua no ramo da educação e do apoio ao estudo, prestando funções sempre com profissionais de qualidade, formados na área de ensino que lecionam.</p>
+                <p data-i18n="about.p2">Sediado no centro de Santa Maria da Feira, junto da Escola Secundária de Santa Maria da Feira e nas proximidades das áreas escolares.</p>
+                <p data-i18n="about.p3">Este centro de explicações assenta em valores fundamentais: rigor, profissionalismo, competência, responsabilidade, clareza, confiança e empenho, condições essenciais para a preparação dos alunos desde o primeiro ciclo do ensino básico até à conclusão do ensino secundário.</p>
+                <p data-i18n="about.p4">A empresa conta com uma equipa jovem, dinâmica, especializada e proativa que se empenha e se dedica à formação dos alunos. Esta formação ocorre em explicações individuais ou em pequenos grupos, na gestão e apoio psicopedagógico e na orientação curricular dos alunos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="vision.title">Visão e Missão</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item active">
+                    <button class="accordion-header">
+                        <span data-i18n="vision.mission">Missão</span>
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="vision.mission1">Oferecer condições para que os pais e os alunos atinjam os seus objetivos e o sucesso.</p>
+                        <p data-i18n="vision.mission2">Oferecer serviços de confiança e de excelência.</p>
+                        <p data-i18n="vision.mission3">Oferecer Explicações em todas as áreas do saber escolar.</p>
+                        <p data-i18n="vision.mission4">Manter a excelência na preparação escolar dos alunos.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="vision.objectives">Objetivos</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="vision.obj1">Proporcionar um ambiente de estudo adequado e motivador.</p>
+                        <p data-i18n="vision.obj2">Desenvolver métodos de estudo eficazes e personalizados.</p>
+                        <p data-i18n="vision.obj3">Preparar os alunos para os desafios académicos e profissionais.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Values Cards -->
+            <div class="values-cards">
+                <div class="value-card">
+                    <div class="value-icon green">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3 data-i18n="values.success">Sucesso</h3>
+                    <p data-i18n="values.successDesc">Ajudar os nossos explicandos a atingir e manter o sucesso escolar.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon yellow">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 data-i18n="values.trust">Confiança e excelência</h3>
+                    <p data-i18n="values.trustDesc">Atuamos há 14 anos! Ao longo da nossa história contamos com inúmeros casos de sucesso.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon pink">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="values.team">Equipa</h3>
+                    <p data-i18n="values.teamDesc">Professores licenciados e experientes, colocados em escolas do Ensino Público - atualizados nos conteúdos, metodologias e metas curriculares.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon purple">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 data-i18n="values.method">Método e rigor</h3>
+                    <p data-i18n="values.methodDesc">Trabalho rigoroso, contínuo e metódico que valoriza a apreensão, a interiorização e o completo entendimento dos conteúdos em vez da simples memorização.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon orange">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 data-i18n="values.exams">Provas e exames nacionais</h3>
+                    <p data-i18n="values.examsDesc">Preocupação em proporcionar conhecimentos e aprendizagens para dar resposta a estes instrumentos de avaliação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutoring Section -->
+    <section class="tutoring">
+        <div class="container">
+            <div class="tutoring-content">
+                <div class="tutoring-text">
+                    <h2 data-i18n="tutoring.title">Explicações</h2>
+                    <p data-i18n="tutoring.desc">Serviço primordial e prioritário. Acreditamos nesta metodologia, porque é a mais eficaz. Permite um acompanhamento mais eficiente e uma perceção das reais necessidades dos alunos. As explicações podem ser individuais ou em pequenos grupos e são ministradas por professores experientes e licenciados.</p>
+                    <div class="online-box">
+                        <h4 data-i18n="tutoring.online">Online</h4>
+                        <p data-i18n="tutoring.onlineDesc">Num momento de inovação tecnológica e no período que atravessamos, nesta Era Digital, estamos presente no espaço Virtual e disponibilizamos os nossos serviços online.</p>
+                    </div>
+                </div>
+                <div class="tutoring-image">
+                    <img src="images/tutoring.png" alt="Explicações" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Areas Section -->
+    <section class="support-areas">
+        <div class="wave-top"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="areas.title">Áreas de apoio</h2>
+                <div class="section-divider pink"></div>
+            </div>
+            <div class="areas-carousel">
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 data-i18n="areas.languages">Línguas</h3>
+                    <p data-i18n="areas.languagesDesc">Português, Inglês, Francês e Espanhol para todos os níveis de ensino.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 data-i18n="areas.math">Matemática</h3>
+                    <p data-i18n="areas.mathDesc">Apoio em matemática desde o primeiro ciclo até ao ensino secundário.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 data-i18n="areas.sciences">Ciências</h3>
+                    <p data-i18n="areas.sciencesDesc">Física, Química, Biologia e Geologia com acompanhamento especializado.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 data-i18n="areas.humanities">Humanidades</h3>
+                    <p data-i18n="areas.humanitiesDesc">História, Geografia, Filosofia e outras disciplinas da área humanística.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="areas.economics">Economia</h3>
+                    <p data-i18n="areas.economicsDesc">Economia, Contabilidade e Gestão para o ensino secundário e superior.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-i18n="areas.technology">Tecnologia</h3>
+                    <p data-i18n="areas.technologyDesc">Programação, Informática e competências digitais para todos os níveis.</p>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="wave-bottom"></div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section class="recruitment">
+        <div class="container">
+            <div class="recruitment-content">
+                <div class="recruitment-image">
+                    <img src="images/recruitment.png" alt="Recrutamento" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80'">
+                </div>
+                <div class="recruitment-text">
+                    <h2 data-i18n="recruitment.title">Recrutamento</h2>
+                    <ul>
+                        <li data-i18n="recruitment.q1">És calmo interessado, exigente, dedicado?</li>
+                        <li data-i18n="recruitment.q2">Boa apresentação e consciência ética e deontológica?</li>
+                        <li data-i18n="recruitment.q3">Gostas de partilhar conhecimento e consegues fazê-lo de forma eficaz?</li>
+                        <li data-i18n="recruitment.q4">Tens vocação para o ensino?</li>
+                        <li data-i18n="recruitment.q5">Preocupas-te com a aprendizagem, evolução e autonomia dos teus alunos?</li>
+                    </ul>
+                    <p data-i18n="recruitment.cta">Envia um e-mail com o teu currículo para geral@sabervirtual.pt! Inclui a tua morada, data de nascimento e contato!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="testimonials.title">O que dizem os nossos alunos</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="testimonial-text" data-i18n="testimonials.t1.text">"Graças ao SaberVirtual consegui melhorar significativamente as minhas notas. Os professores são muito dedicados e explicam de forma clara."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-info">
+                            <h4 data-i18n="testimonials.t1.name">Maria S.</h4>
+                            <span data-i18n="testimonials.t1.role">Aluna do 12º ano</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="testimonial-text" data-i18n="testimonials.t2.text">"O meu filho tinha dificuldades em matemática e agora está muito mais confiante. Recomendo a todos os pais!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-info">
+                            <h4 data-i18n="testimonials.t2.name">Ana P.</h4>
+                            <span data-i18n="testimonials.t2.role">Mãe de aluno</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="testimonial-text" data-i18n="testimonials.t3.text">"Ambiente fantástico e professores sempre disponíveis. Consegui entrar na universidade que queria!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div class="testimonial-info">
+                            <h4 data-i18n="testimonials.t3.name">João R.</h4>
+                            <span data-i18n="testimonials.t3.role">Ex-aluno</span>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="logo-footer">
+                        <img src="images/logo-horizontal.png" alt="SaberVirtual">
+                    </div>
+                    <div class="social-links-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <h3 data-i18n="contact.title">Contacte-nos</h3>
+                    <p data-i18n="contact.subtitle">Venha descobrir o nosso centro de estudos.</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>R. Ferreira Castro, 19, 4520-261 Santa Maria da Feira</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+351256374367">+351 256 374 367</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <a href="tel:+351937614279">+351 937 614 279</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/351937614279" target="_blank" rel="noopener">+351 937 614 279</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:geral@sabervirtual.pt">geral@sabervirtual.pt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> SaberVirtual. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Service Modals -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Fechar">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
