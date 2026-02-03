@@ -234,7 +234,7 @@ const translations = {
         },
         contact: {
             title: "Contacte-nos",
-            subtitle: "Venha descobrir o nosso centro de estudos."
+            subtitle: "Venha descobrir o nosso centro de explicações."
         },
         testimonials: {
             title: "O que dizem os nossos alunos",
@@ -488,7 +488,7 @@ const translations = {
         },
         contact: {
             title: "Contact Us",
-            subtitle: "Come discover our study center."
+            subtitle: "Come discover our tutoring center."
         },
         testimonials: {
             title: "What our students say",
@@ -996,7 +996,7 @@ const translations = {
         },
         contact: {
             title: "Contactez-nous",
-            subtitle: "Venez découvrir notre centre d'études."
+            subtitle: "Venez découvrir notre centre de soutien scolaire."
         },
         testimonials: {
             title: "Ce que disent nos élèves",
@@ -1228,7 +1228,7 @@ const translations = {
         },
         contact: {
             title: "Kontaktieren Sie uns",
-            subtitle: "Kommen Sie und entdecken Sie unser Studienzentrum."
+            subtitle: "Kommen Sie und entdecken Sie unser Nachhilfezentrum."
         },
         testimonials: {
             title: "Was unsere Schüler sagen",
